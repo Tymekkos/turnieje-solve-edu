@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1656000100 source:c:\users\tymek\desktop\tymek\8loinformatykac++\turniejesolveedu\dominik_i_slownik\main.cpp
+	<cctype>
+	<iostream>
+	<cstring>
+
