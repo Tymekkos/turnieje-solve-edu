@@ -6,6 +6,37 @@ int main()
 {
     string txt;
     cin >> txt;
+    bool a, b, c, d;
+    for(int i=0; i<txt.size(); i++){
+        if(txt[i]>='0' && txt[i]<='9'){
+            b = true;
+        }else if(txt[i] >= 'A' && txt[i] <= 'Z'){
+            c = true;
+        }else if(txt[i] >= 'a' && txt[i] <= 'z'){
+            d = true;
+        }else if(txt[i]=='@' || txt[i]=='$' || txt[i]=='#' || txt[i]=='*'){
+            a = true;
+        }else{
+            cout << "NIE";
+            return 0;
+        }
+    }
+    if(a==true && b==true && c==true && d==true && txt.size()>=8 && txt.size()<=100) {
+        cout << "TAK";
+    }else{
+        cout << "NIE";
+    }
+    return 0;
+}
+/*
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    string txt;
+    cin >> txt;
     int a, b, c, d;
     int xx = txt.size();
     char tab[xx];
@@ -34,3 +65,4 @@ int main()
 
     return 0;
 }
+*/
