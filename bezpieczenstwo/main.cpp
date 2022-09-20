@@ -5,8 +5,11 @@ using namespace std;
 int main()
 {
     string txt;
-    cin >> txt;
-    bool a, b, c, d;
+    getline(cin, txt);
+    bool a=false;
+    bool b=false;
+    bool c=false;
+    bool d=false;
     for(int i=0; i<txt.size(); i++){
         if(txt[i]>='0' && txt[i]<='9'){
             b = true;
@@ -21,7 +24,7 @@ int main()
             return 0;
         }
     }
-    if(a==true && b==true && c==true && d==true && txt.size()>=8 && txt.size()<=100) {
+    if(a && b && c && d && txt.size()>=8 && txt.size()<=100) {
         cout << "TAK";
     }else{
         cout << "NIE";
