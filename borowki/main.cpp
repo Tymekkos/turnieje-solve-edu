@@ -1,6 +1,18 @@
 #include <iostream>
+#include <bits/stdc++.h>
 
 using namespace std;
+
+void skroculamek(int x, int y)
+{
+    int d;
+    d = __gcd(x, y); //najwiekszy wspolny dzielnik
+
+    x = x / d;
+    y = y / d;
+
+    cout << x << "/" << y;
+}
 
 int main()
 {
@@ -26,7 +38,15 @@ int main()
             wyjB = i+1;
         }
     }
-    if()
-    cout << wyjA << "/" << wyjB;
+    /*
+    if(wyjA % wyjB == 0){
+        wyjA = wyjA/wyjB
+        wyjB = 1;
+    }else if(wyjB % wyjA == 0){
+        wyjA = wyjA/wyjB
+        wyjB = 1;
+    }
+    */
+    skroculamek(wyjA, wyjB);
     return 0;
 }
