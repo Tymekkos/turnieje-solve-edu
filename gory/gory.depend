@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1657651350 source:c:\users\tymek\desktop\tymek\8loinformatykac++\turniejesolveedu\gory\main.cpp
+	<iostream>
+	<cstdio>
+	<cstdlib>
+	<cmath>
+
