@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1663873989 source:c:\users\tymek\desktop\tymek\8loinformatykac++\turniejesolveedu\licytacja\main.cpp
+	<iostream>
+	<string>
+	<algorithm>
+
